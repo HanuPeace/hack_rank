@@ -1,0 +1,14 @@
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    result=[]
+    for X1 in range (x+1):
+        for Y1 in range (y+1):
+            for Z1 in range (z+1):
+                f=X1+Y1+Z1
+                if f!=n:
+                    result.append([X1,Y1,Z1])
+            
+    print(result)
