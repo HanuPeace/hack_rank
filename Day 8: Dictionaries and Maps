@@ -8,8 +8,9 @@ for i in range(n):
     dic[name]=[phone]
     
 for i in range(n):
-    f=str(input())
+    f=input()
     if dic.__contains__(f):
-        print(str(f)+"="+str(*dic[f]))
+         print(str(f)+"="+str(*dic[f]))
     else:
         print('Not found')
+
