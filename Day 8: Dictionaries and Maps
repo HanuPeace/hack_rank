@@ -1,0 +1,15 @@
+n=int(input())# Enter your code here. Read input from STDIN. Print output to STDOUT
+dic={}
+for i in range(n):
+    s=str(input())
+    cell=s.split(" ")
+    name=cell[0]
+    phone=cell[1]
+    dic[name]=[phone]
+    
+for i in range(n):
+    f=str(input())
+    if dic.__contains__(f):
+        print(str(f)+"="+str(*dic[f]))
+    else:
+        print('Not found')
