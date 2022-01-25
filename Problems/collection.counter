@@ -1,0 +1,12 @@
+from collections import Counter
+ear=0
+nshoe=input()
+data_shoe=Counter(map(int,input().split()))
+ncust=int(input())
+for cust in range(ncust):
+    siz,cst=map(int,input().split())
+    if siz in data_shoe and data_shoe[siz]>0:
+        data_shoe[siz] -= 1
+        ear += cst
+print(ear)
+
