@@ -1,0 +1,21 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+def maxmod(a,m):
+    max=0
+    for i in range(len(a)):
+        
+        if (a[i]%m +a[i]/m):
+            b=((a[i]*a[i])%m)
+            if max< b:
+                max=b
+    return(max%m)
+
+    
+    
+k,m = map(int,input().split()) 
+max=0
+for i in range(k):
+    a=list(map(int,input().split()[1:]))
+    max += maxmod(a,m)
+print(max)
+   
